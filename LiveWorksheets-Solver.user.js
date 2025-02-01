@@ -2,22 +2,22 @@
 // @name         LiveWorksheets Solver
 // @license      GNU GPLv3
 // @namespace    https://github.com/danucosukosuko/livesolver
-// @version      1.0.3
+// @version      1.0.5
 // @description  Muestra un botón en la parte superior del DOM de LiveWorksheets y te permite pulsarlo, revelando así las respuestas. Si no se pulsa en 5 segundos, el botón desaparece.
 // @author       danucosukosuko
 // @match        *://www.liveworksheets.com/*/w/*
 // @match        *://www.liveworksheets.com/w/*
 // @grant        none
-// @updateURL    https://github.com/danucosukosuko/livesolver/raw/main/LiveWorksheets-Solver.user.js
-// @downloadURL  https://github.com/danucosukosuko/livesolver/raw/main/LiveWorksheets-Solver.user.js
+// @downloadURL  https://raw.githubusercontent.com/danucosukosuko/livesolver/main/LiveWorksheetsSolver.user.js
+// @updateURL    https://raw.githubusercontent.com/danucosukosuko/livesolver/main/LiveWorksheetsSolver.meta.js
 // ==/UserScript==
 
 (function() {
     'use strict';
 
-    // Verificar si la URL contiene "/w/" independientemente de cualquier subdirectorio anterior
+    // Verificar si la URL contiene "/w/" o "/cualquier-cosa/w/"
     const pathname = window.location.pathname;
-    if (pathname.match(/\/[^\/]+\/w\//)) {
+    if (pathname.match(/\/w\//) || pathname.match(/\/[^\/]+\/w\//)) {
         let btn = document.createElement("button");
         btn.innerText = "Mostrar Respuestas";
         Object.assign(btn.style, {
