@@ -1,3 +1,4 @@
+
 // ==UserScript==
 // @name         LiveWorksheets Solver
 // @license      GNU GPLv3
@@ -9,7 +10,7 @@
 // @match        *://www.liveworksheets.com/w/*
 // @grant        none
 // @downloadURL  https://raw.githubusercontent.com/danucosukosuko/livesolver/main/LiveWorksheetsSolver.user.js
-// @updateURL    https://raw.githubusercontent.com/danucosukosuko/livesolver/main/LiveWorksheetsSolver.meta.js
+// @updateURL    https://raw.githubusercontent.com/danucosukosuko/livesolver/main/LiveWorksheetsSolver.user.js
 // ==/UserScript==
 
 (function() {
