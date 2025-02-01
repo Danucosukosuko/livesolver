@@ -2,10 +2,10 @@
 // @name         LiveWorksheets Solver
 // @license      GNU GPLv3
 // @namespace    https://github.com/danucosukosuko/livesolver
-// @version      1.0
+// @version      1.0.1
 // @description  Muestra un botón en la parte superior del DOM de LiveWorksheets y te permite pulsarlo, revelando así las respuestas. Si no se pulsa en 5 segundos, el botón desaparece.
 // @author       danucosukosuko
-// @match        *://www.liveworksheets.com/w/*
+// @match        *://www.liveworksheets.com/*/w/*
 // @grant        none
 // @updateURL    https://github.com/danucosukosuko/livesolver/raw/main/LiveWorksheets-Solver.user.js
 // @downloadURL  https://github.com/danucosukosuko/livesolver/raw/main/LiveWorksheets-Solver.user.js
